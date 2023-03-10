@@ -1,3 +1,4 @@
 require('plugins');
-require('config');
 require('settings');
+require('mapping');
+require('config');

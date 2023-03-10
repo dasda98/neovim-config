@@ -28,6 +28,6 @@ opt.smartcase   =   true
 
 -- ui
 opt.cursorline  =   true
-opt.number      =   true
+opt.relativenumber =   true
 opt.cc          =   "80"
 
