@@ -8,3 +8,4 @@ This is my config file containing plugins, keymaps and other options.
 - Treesitter
 - Telescope
 - Nvim-Tree
+- Which-Key
