@@ -9,3 +9,4 @@ This is my config file containing plugins, keymaps and other options.
 - Telescope
 - Nvim-Tree
 - Which-Key
+- LSP-config
