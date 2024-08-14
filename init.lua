@@ -1,3 +1,1 @@
-require('plugins');
-require('settings');
-require('config');
+require("config.lazy")
