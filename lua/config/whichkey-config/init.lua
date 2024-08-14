@@ -8,14 +8,14 @@ local wk = require("which-key")
 --  * <leader>fe edit file
 -- and hide <leader>1
 
-wk.register({
-  f = {
-    name = "file", -- optional group name
-    f = { "<cmd>Telescope find_files<cr>", "Find file" },
-    g = { "<cmd>Telescope live_grep<cr>", "Find contex in current root"},
-  },
-  t = {
-    name = "tree",
-    t = { "<cmd>NvimTreeToggle<cr>", "Open/Close tree" }
-  }
-}, { prefix = "<leader>" })
+wk.add({
+    {
+        { "<leader>f", group = "file" },
+        { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find file" },
+        { "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Find contex in current root" },
+        { "<leader>t", group = "tree" },
+        { "<leader>tt", "<cmd>NvimTreeToggle<cr>", desc = "Open/Close tree" },
+    }
+
+})
+
