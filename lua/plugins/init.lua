@@ -9,19 +9,31 @@ return require('packer').startup(function(use)
             ts_update()
         end,
     }
-    use { 'nvim-telescope/telescope.nvim', tag = '0.1.1', requires = {{ 'nvim-lua/plenary.nvim' }} }
-    use {
-    'nvim-tree/nvim-tree.lua',
-    requires = {
-    'nvim-tree/nvim-web-devicons', -- optional, for file icons
+    use { 
+        'nvim-telescope/telescope.nvim', 
+        requires = { 
+            'nvim-lua/plenary.nvim' 
+        } 
     }
+    use {
+        'nvim-tree/nvim-tree.lua',
+        requires = {
+            'nvim-tree/nvim-web-devicons', -- optional, for file icons
+        }
     }
     use {
-    'nvim-lualine/lualine.nvim',
-    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+        'nvim-lualine/lualine.nvim',
+        requires = { 
+            'nvim-tree/nvim-web-devicons', 
+            opt = true 
+        }
+    }
+    use {
+        'akinsho/bufferline.nvim', 
+        tag = "*", 
+        requires = 'nvim-tree/nvim-web-devicons'
     }
     use "folke/which-key.nvim"
-    use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
     use 'neovim/nvim-lspconfig'
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-buffer'
