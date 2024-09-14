@@ -1,4 +1,5 @@
 local opt = vim.opt
+local glb = vim.g
 
 
 opt.syntax      =   "enable"
@@ -24,3 +25,11 @@ opt.cursorline  =   true
 opt.cc          =   "80"
 opt.relativenumber =    true
 opt.termguicolors  =    true
+
+
+-- ultisnip
+glb.UltiSnipsExpandTrigger='<c-x>'
+glb.UltiSnipsJumpForwardTrigger='<c-j>'
+glb.UltiSnipsJumpBackwardTrigger='<c-k>'
+
+
