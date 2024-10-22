@@ -1,14 +1,8 @@
 local opt = vim.opt
-local cmd = vim.cmd
-
-
-cmd([[
-                    filetype plugin indent on
-]])
+local glb = vim.g
 
 
 opt.syntax      =   "enable"
-
 
 -- indention
 opt.tabstop     =   4
@@ -28,6 +22,14 @@ opt.smartcase   =   true
 
 -- ui
 opt.cursorline  =   true
-opt.relativenumber =   true
 opt.cc          =   "80"
+opt.relativenumber =    true
+opt.termguicolors  =    true
+
+
+-- ultisnip
+glb.UltiSnipsExpandTrigger='<c-x>'
+glb.UltiSnipsJumpForwardTrigger='<c-j>'
+glb.UltiSnipsJumpBackwardTrigger='<c-k>'
+
 
