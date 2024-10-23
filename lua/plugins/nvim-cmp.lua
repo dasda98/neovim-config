@@ -7,7 +7,7 @@ return {
             'hrsh7th/cmp-path',
             'hrsh7th/cmp-cmdline',
             'SirVer/ultisnips',
-            'quangnguyen30192/cmp-nvim-ultisnips',  
+            'quangnguyen30192/cmp-nvim-ultisnips',
         },
         config = function()
             local cmp = require("cmp")
