@@ -20,6 +20,7 @@ return {
   			"vim", "lua", "vimdoc",
         "html", "css",
         "python",
+        "markdown", "markdown_inline",
   		},
   	},
   },
@@ -42,5 +43,15 @@ return {
     keys = {
         { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
     }
+  },
+  {
+    "MeanderingProgrammer/render-markdown.nvim",
+    dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
+    ---@module 'render-markdown'
+    ---@type render.md.UserConfig
+    opts = {},
+    keys = {
+      {"<leader>md", "<cmd>RenderMarkdown<cr>", desc="Render Markdown"}
+    },
   },
 }
